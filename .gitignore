@@ -1,11 +1,48 @@
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+.env.test
+.env.local.php
+
+# Composer y dependencias
+/vendor/
+composer.lock
+composer.phar
+
+# Symfony y caché
+/var/
+/symfony.lock
+/public/bundles/
+
+# Configuración específica de Symfony
+/config/secrets/prod/prod.decrypt.private.php
+
+# Archivos y carpetas de PHPUnit
+/phpunit.xml
+.phpunit.result.cache
+/tests/
+/phpunit.xml.dist
+
+# Archivos de despliegue y contenedores Docker (si aplica)
+bin/
+compose.override.yaml
+compose.yaml
+
+# Archivos y carpetas de caché de Python (si el proyecto los usa)
+/ESP32Project/__pycache__/
+
+# Archivos específicos de desarrollo o IDE
 main/.theia
 docs/00-Prompt-for-ProjectAnalysis.md
 main/docs/00-Prompt-for-ProjectAnalysis.md
-ESP32Project/__pycache__/
-.env
-vendor/
-composer.lock
-composer.phar
-deploy_to_main.ps1
 public/docs/00-Prompt-for-ProjectAnalysis.md
 app/docs/00-Prompt-for-ProjectAnalysis.md
+
+# Otros archivos de logs o temporales (opcional)
+logs/
+*.log
+*.cache
+*.tmp
+.DS_Store
+Thumbs.db
